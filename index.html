@@ -5,58 +5,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="Sitio web del Laboratorio de Investigación en Cómputo de Física de la Universidad de Playa Ancha.">
   <title>LCF · Laboratorio de Investigación en Cómputo de Física | UPLA</title>
-  <style>
-    :root {--navy:#0c1831;--blue:#236dd2;--light:#f5f8fd;--ink:#18233b;--muted:#62728a;--line:#e4ebf4}
-    * {box-sizing:border-box}
-    html{scroll-behavior:smooth}
-    body{margin:0;color:var(--ink);font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;line-height:1.65;background:#fff}
-    a{color:inherit}
-    .container{max-width:1080px;margin:auto;padding:0 24px}
-    header{position:sticky;top:0;z-index:20;background:rgba(255,255,255,.96);border-bottom:1px solid var(--line);backdrop-filter:blur(12px)}
-    .header-inner{display:flex;justify-content:space-between;align-items:center;gap:24px;min-height:76px}
-    .brand{display:flex;align-items:center;gap:12px;text-decoration:none;font-weight:800;letter-spacing:.015em;color:var(--navy)}
-    .mark{width:44px;height:44px;display:grid;place-items:center;background:var(--navy);border-radius:12px;color:#fff;font-size:16px}
-    .brand small{display:block;font-size:11px;letter-spacing:.065em;text-transform:uppercase;font-weight:650;color:var(--muted)}
-    nav{display:flex;align-items:center;gap:28px}
-    nav a{font-size:14px;color:#465570;text-decoration:none;font-weight:600}
-    nav a:hover{color:var(--blue)}
-    .hero{overflow:hidden;background:radial-gradient(circle at 80% 20%,#23497f 0%,transparent 35%),linear-gradient(125deg,#0b1428,#142b51 68%,#0b244b);color:#fff;padding:100px 0 106px;position:relative}
-    .hero:after{content:"";position:absolute;width:520px;height:520px;right:-180px;bottom:-280px;border:1px solid #8dbbff54;border-radius:50%;box-shadow:0 0 0 60px #8dbbff0a,0 0 0 125px #8dbbff09;pointer-events:none}
-    .eyebrow{display:inline-flex;align-items:center;gap:9px;color:#9bc7ff;font-weight:750;font-size:13px;letter-spacing:.12em;text-transform:uppercase}
-    .eyebrow:before{content:"";width:24px;height:2px;background:#69b3ff}
-    h1{font-size:clamp(38px,5.7vw,64px);line-height:1.1;letter-spacing:-.048em;max-width:840px;margin:24px 0}
-    .hero p{font-size:19px;color:#d2dded;max-width:640px;margin:0 0 34px}
-    .button{display:inline-block;border-radius:9px;background:#eaf3ff;color:#0b2851;padding:13px 22px;text-decoration:none;font-size:14px;font-weight:800}
-    .button:hover{background:#fff}
-    section{padding:82px 0}
-    h2{font-size:clamp(28px,3.5vw,39px);letter-spacing:-.035em;line-height:1.2;margin:0 0 16px;color:var(--navy)}
-    .lead{color:var(--muted);font-size:17px;max-width:720px;margin:0}
-    .kicker{text-transform:uppercase;letter-spacing:.14em;color:var(--blue);font-size:12px;font-weight:850;margin:0 0 12px}
-    .cards{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px;margin-top:34px}
-    .card{border:1px solid var(--line);border-radius:15px;padding:28px;background:#fff;box-shadow:0 8px 32px #132b4d05}
-    .card-num{color:#3e83df;font-size:13px;font-weight:850;letter-spacing:.13em}
-    .card h3{font-size:21px;line-height:1.3;letter-spacing:-.025em;color:var(--navy);margin:13px 0 8px}
-    .card p{font-size:14.5px;color:var(--muted);margin:0}
-    .gray{background:var(--light)}
-    .photo-grid{display:grid;grid-template-columns:1.1fr .9fr;align-items:center;gap:45px}
-    .photo{margin:0;background:#dfebfa;border-radius:18px;overflow:hidden;box-shadow:0 20px 50px #12274b19}
-    .photo img{display:block;width:100%;height:360px;object-fit:cover}
-    .photo figcaption{padding:11px 17px;background:#fff;font-size:12px;color:#64748b}
-    .outline-link{display:inline-flex;align-items:center;gap:8px;color:var(--blue);font-weight:750;text-decoration:none;border-bottom:1px solid #8bb7ee;padding-bottom:3px;margin-top:22px}
-    .contact{background:var(--navy);color:#fff;padding:60px 0}
-    .contact h2{color:#fff}
-    .contact p{color:#d0dbed;max-width:640px}
-    .contact .outline-link{color:#b8dcff}
-    footer{background:#080f20;color:#91a2be;font-size:13px;padding:22px 0}
-    footer .container{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
-    @media(max-width:700px){.header-inner{min-height:70px}.brand small{font-size:10px}nav{gap:13px}nav a{font-size:12px}nav a:nth-child(2){display:none}.hero{padding:75px 0 80px}.hero p{font-size:17px}.cards,.photo-grid{grid-template-columns:1fr}.photo-grid{gap:26px}.photo-grid .photo{order:2}.photo img{height:auto;min-height:220px}section{padding:62px 0}.card{padding:23px}}
-  </style>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <header>
     <div class="container header-inner">
       <a class="brand" href="#inicio" aria-label="Ir al inicio"><span class="mark">LCF</span><span>LCF · UPLA<small>Investigación en Física</small></span></a>
-      <nav aria-label="Menú principal"><a href="#investigacion">Investigación</a><a href="#laboratorio">Laboratorio</a><a href="#contacto">Contacto</a></nav>
+      <nav aria-label="Menú principal"><a href="#investigacion">Investigación</a><a href="#equipo">Equipo y estudiantes</a><a href="#laboratorio">Laboratorio</a><a href="#contacto">Contacto</a></nav>
     </div>
   </header>
   <main>
@@ -74,10 +29,32 @@
         <h2>Nuestras áreas de investigación</h2>
         <p class="lead">Integramos teoría, análisis numérico y herramientas computacionales para abordar problemas actuales de la física.</p>
         <div class="cards">
-          <article class="card"><div class="card-num">01 / COSMOS</div><h3>Cosmología y gravitación</h3><p>Dinámica del universo, gravedad y modelos cosmológicos.</p></article>
-          <article class="card"><div class="card-num">02 / PARTÍCULAS</div><h3>Física de partículas y neutrinos</h3><p>Modelos y fenómenos vinculados a la física fundamental.</p></article>
-          <article class="card"><div class="card-num">03 / ÓPTICA</div><h3>Óptica estadística</h3><p>Estudio teórico y computacional de fenómenos ópticos.</p></article>
-          <article class="card"><div class="card-num">04 / CÓMPUTO</div><h3>Simulación y métodos numéricos</h3><p>Programación científica y análisis de sistemas físicos.</p></article>
+          <a class="card card-link" href="cosmologia.html"><div class="card-num">01 / COSMOS</div><h3>Cosmología y gravitación</h3><p>Dinámica del universo, gravedad y modelos cosmológicos.</p><span class="card-cta">Ver investigación y publicaciones ↗</span></a>
+          <a class="card card-link" href="particulas.html"><div class="card-num">02 / PARTÍCULAS</div><h3>Física de partículas y neutrinos</h3><p>Modelos y fenómenos vinculados a la física fundamental.</p><span class="card-cta">Ver investigación y publicaciones ↗</span></a>
+          <a class="card card-link" href="optica.html"><div class="card-num">03 / ÓPTICA</div><h3>Óptica estadística</h3><p>Estudio teórico y computacional de fenómenos ópticos.</p><span class="card-cta">Ver investigación y publicaciones ↗</span></a>
+          <a class="card card-link" href="metodos-numericos.html"><div class="card-num">04 / CÓMPUTO</div><h3>Simulación y métodos numéricos</h3><p>Programación científica y análisis de sistemas físicos.</p><span class="card-cta">Conoce esta área ↗</span></a>
+        </div>
+      </div>
+    </section>
+    <section id="equipo">
+      <div class="container">
+        <p class="kicker">Personas</p>
+        <h2>Equipo y estudiantes</h2>
+        <p class="lead">Investigación colaborativa y formación de nuevas generaciones en física.</p>
+        <h3 class="section-subtitle">Investigadores</h3>
+        <div class="team-grid">
+          <article class="team-card"><div class="card-num">COSMOLOGÍA Y GRAVITACIÓN</div><h3>Manuel González-Espinoza</h3><p>Investigación en cosmología y gravitación.</p><a href="cosmologia.html">Ver su línea de investigación ↗</a></article>
+          <article class="team-card"><div class="card-num">FÍSICA DE PARTÍCULAS</div><h3>Juan Marchant González</h3><p>Investigación en partículas y neutrinos.</p><a href="particulas.html">Ver su línea de investigación ↗</a></article>
+          <article class="team-card"><div class="card-num">ÓPTICA ESTADÍSTICA</div><h3>Leandro Núñez Arratia</h3><p>Investigación en óptica y propagación de la luz.</p><a href="optica.html">Ver su línea de investigación ↗</a></article>
+        </div>
+        <h3 class="section-subtitle">Estudiantes</h3>
+        <p class="muted-note">Espacios provisionales que se completarán con los nombres de los integrantes.</p>
+        <div class="students" aria-label="Estudiantes del laboratorio">
+          <div class="student"><div class="avatar" aria-hidden="true">01</div><p>Alumno(a) 1</p></div>
+          <div class="student"><div class="avatar" aria-hidden="true">02</div><p>Alumno(a) 2</p></div>
+          <div class="student"><div class="avatar" aria-hidden="true">03</div><p>Alumno(a) 3</p></div>
+          <div class="student"><div class="avatar" aria-hidden="true">04</div><p>Alumno(a) 4</p></div>
+          <div class="student"><div class="avatar" aria-hidden="true">05</div><p>Alumno(a) 5</p></div>
         </div>
       </div>
     </section>
