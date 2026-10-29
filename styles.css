@@ -142,3 +142,10 @@ a.card-link:focus-visible,.outline-link:focus-visible,nav a:focus-visible,.butto
   nav{gap:8px 12px}
   .students{grid-template-columns:1fr 1fr}
 }
+
+/* Fotos de investigadores en tarjetas de inicio */
+.team-grid .team-card{padding:0;overflow:hidden}
+.team-image{height:210px;background:#e5edf8;overflow:hidden}
+.team-image img{width:100%;height:100%;object-fit:cover;object-position:center 28%}
+.team-card-content{padding:22px}
+@media(max-width:700px){.team-image{height:240px}}
