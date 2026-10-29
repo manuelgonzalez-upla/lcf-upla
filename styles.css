@@ -25,7 +25,7 @@ nav{display:flex;align-items:center;gap:28px}
 nav a{font-size:14px;color:#465570;text-decoration:none;font-weight:600}
 nav a:hover{color:var(--blue)}
 .hero{overflow:hidden;position:relative;color:#fff;padding:110px 0 110px;background:linear-gradient(125deg,#0b1428,#142b51 68%,#0b244b)}
-.hero::before{content:"";position:absolute;inset:0;background-image:var(--hero-bg);background-size:cover;background-position:center;background-repeat:no-repeat;opacity:.38}
+.hero::before{content:"";position:absolute;inset:0;background-image:var(--hero-bg);background-size:cover;background-position:center;background-repeat:no-repeat;opacity:.44}
 .hero::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(6,18,41,.88) 0%,rgba(6,18,41,.78) 35%,rgba(6,18,41,.62) 100%)}
 .hero .container,.subhero .container{position:relative;z-index:1}
 .eyebrow{display:inline-flex;align-items:center;gap:9px;color:#9bc7ff;font-weight:750;font-size:13px;letter-spacing:.12em;text-transform:uppercase}
