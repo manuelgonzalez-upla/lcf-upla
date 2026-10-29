@@ -10,54 +10,115 @@
 <body>
   <header>
     <div class="container header-inner">
-      <a class="brand" href="#inicio" aria-label="Ir al inicio"><span class="mark">LCF</span><span>LCF · UPLA<small>Investigación en Física</small></span></a>
-      <nav aria-label="Menú principal"><a href="#investigacion">Investigación</a><a href="#equipo">Equipo y estudiantes</a><a href="#laboratorio">Laboratorio</a><a href="#contacto">Contacto</a></nav>
+      <a class="brand" href="#inicio" aria-label="Ir al inicio">
+        <span class="mark"><img src="assets/logo-lcf-upla.png" alt="Logo LCF UPLA"></span>
+        <span>LCF · UPLA<small>Investigación en Física</small></span>
+      </a>
+      <nav aria-label="Menú principal">
+        <a href="#investigacion">Investigación</a>
+        <a href="#equipo">Equipo y estudiantes</a>
+        <a href="#laboratorio">Laboratorio</a>
+        <a href="#contacto">Contacto</a>
+      </nav>
     </div>
   </header>
   <main>
-    <div class="hero" id="inicio">
+    <div class="hero" id="inicio" style="--hero-bg:url('assets/hero-computo.png')">
       <div class="container">
         <span class="eyebrow">Universidad de Playa Ancha · Valparaíso, Chile</span>
         <h1>Exploramos la física con herramientas computacionales.</h1>
-        <p>Laboratorio de Investigación en Cómputo de Física: un espacio para la investigación, el modelamiento y la colaboración científica.</p>
-        <a class="button" href="#investigacion">Conoce nuestro trabajo &nbsp;↗</a>
+        <p>Laboratorio de Investigación en Cómputo de Física: un espacio para la investigación, el modelamiento, la simulación y la colaboración científica.</p>
+        <div class="button-row">
+          <a class="button" href="#investigacion">Conoce nuestro trabajo &nbsp;↗</a>
+          <a class="button secondary" href="https://www.instagram.com/lcf_upla?psln=MXIzdzRicmZvcTJ4bA==" target="_blank" rel="noopener noreferrer">Instagram @lcf_upla ↗</a>
+        </div>
       </div>
     </div>
+
     <section id="investigacion">
       <div class="container">
         <p class="kicker">Qué investigamos</p>
         <h2>Nuestras áreas de investigación</h2>
         <p class="lead">Integramos teoría, análisis numérico y herramientas computacionales para abordar problemas actuales de la física.</p>
         <div class="cards">
-          <a class="card card-link" href="cosmologia.html"><div class="card-num">01 / COSMOS</div><h3>Cosmología y gravitación</h3><p>Dinámica del universo, gravedad y modelos cosmológicos.</p><span class="card-cta">Ver investigación y publicaciones ↗</span></a>
-          <a class="card card-link" href="particulas.html"><div class="card-num">02 / PARTÍCULAS</div><h3>Física de partículas y neutrinos</h3><p>Modelos y fenómenos vinculados a la física fundamental.</p><span class="card-cta">Ver investigación y publicaciones ↗</span></a>
-          <a class="card card-link" href="optica.html"><div class="card-num">03 / ÓPTICA</div><h3>Óptica estadística</h3><p>Estudio teórico y computacional de fenómenos ópticos.</p><span class="card-cta">Ver investigación y publicaciones ↗</span></a>
-          <a class="card card-link" href="metodos-numericos.html"><div class="card-num">04 / CÓMPUTO</div><h3>Simulación y métodos numéricos</h3><p>Programación científica y análisis de sistemas físicos.</p><span class="card-cta">Conoce esta área ↗</span></a>
+          <a class="card card-link" href="cosmologia.html">
+            <div class="card-cover" style="background-image:url('assets/cosmologia-card.png')"></div>
+            <div class="card-body">
+              <div class="card-num">01 / COSMOS</div>
+              <h3>Cosmología y gravitación</h3>
+              <p>Dinámica del universo, gravedad y modelos cosmológicos.</p>
+              <span class="card-cta">Ver investigación y publicaciones ↗</span>
+            </div>
+          </a>
+          <a class="card card-link" href="particulas.html">
+            <div class="card-cover" style="background-image:url('assets/particulas-card.png')"></div>
+            <div class="card-body">
+              <div class="card-num">02 / PARTÍCULAS</div>
+              <h3>Física de partículas y neutrinos</h3>
+              <p>Modelos y fenómenos vinculados a la física fundamental.</p>
+              <span class="card-cta">Ver investigación y publicaciones ↗</span>
+            </div>
+          </a>
+          <a class="card card-link" href="optica.html">
+            <div class="card-cover" style="background-image:url('assets/optica-card.png')"></div>
+            <div class="card-body">
+              <div class="card-num">03 / ÓPTICA</div>
+              <h3>Óptica estadística</h3>
+              <p>Estudio teórico y computacional de fenómenos ópticos.</p>
+              <span class="card-cta">Ver investigación y publicaciones ↗</span>
+            </div>
+          </a>
+          <a class="card card-link" href="metodos-numericos.html">
+            <div class="card-cover" style="background-image:url('assets/metodos-bg.png')"></div>
+            <div class="card-body">
+              <div class="card-num">04 / CÓMPUTO</div>
+              <h3>Simulación y métodos numéricos</h3>
+              <p>Programación científica y análisis de sistemas físicos.</p>
+              <span class="card-cta">Conoce esta área ↗</span>
+            </div>
+          </a>
         </div>
       </div>
     </section>
+
     <section id="equipo">
       <div class="container">
         <p class="kicker">Personas</p>
         <h2>Equipo y estudiantes</h2>
         <p class="lead">Investigación colaborativa y formación de nuevas generaciones en física.</p>
+
         <h3 class="section-subtitle">Investigadores</h3>
         <div class="team-grid">
-          <article class="team-card"><div class="card-num">COSMOLOGÍA Y GRAVITACIÓN</div><h3>Manuel González-Espinoza</h3><p>Investigación en cosmología y gravitación.</p><a href="cosmologia.html">Ver su línea de investigación ↗</a></article>
-          <article class="team-card"><div class="card-num">FÍSICA DE PARTÍCULAS</div><h3>Juan Marchant González</h3><p>Investigación en partículas y neutrinos.</p><a href="particulas.html">Ver su línea de investigación ↗</a></article>
-          <article class="team-card"><div class="card-num">ÓPTICA ESTADÍSTICA</div><h3>Leandro Núñez Arratia</h3><p>Investigación en óptica y propagación de la luz.</p><a href="optica.html">Ver su línea de investigación ↗</a></article>
+          <article class="team-card">
+            <div class="card-num">COSMOLOGÍA Y GRAVITACIÓN</div>
+            <h3>Manuel González-Espinoza</h3>
+            <p>Investigación en cosmología y gravitación.</p>
+            <a href="cosmologia.html">Ver su línea de investigación ↗</a>
+          </article>
+          <article class="team-card">
+            <div class="card-num">FÍSICA DE PARTÍCULAS</div>
+            <h3>Juan Marchant González</h3>
+            <p>Investigación en partículas y neutrinos.</p>
+            <a href="particulas.html">Ver su línea de investigación ↗</a>
+          </article>
+          <article class="team-card">
+            <div class="card-num">ÓPTICA ESTADÍSTICA</div>
+            <h3>Leandro Núñez Arratia</h3>
+            <p>Investigación en óptica y propagación de la luz.</p>
+            <a href="optica.html">Ver su línea de investigación ↗</a>
+          </article>
         </div>
+
         <h3 class="section-subtitle">Estudiantes</h3>
-        <p class="muted-note">Espacios provisionales que se completarán con los nombres de los integrantes.</p>
+        
         <div class="students" aria-label="Estudiantes del laboratorio">
-          <div class="student"><div class="avatar" aria-hidden="true">01</div><p>Alumno(a) 1</p></div>
-          <div class="student"><div class="avatar" aria-hidden="true">02</div><p>Alumno(a) 2</p></div>
-          <div class="student"><div class="avatar" aria-hidden="true">03</div><p>Alumno(a) 3</p></div>
-          <div class="student"><div class="avatar" aria-hidden="true">04</div><p>Alumno(a) 4</p></div>
-          <div class="student"><div class="avatar" aria-hidden="true">05</div><p>Alumno(a) 5</p></div>
+          <div class="student"><div class="avatar" aria-hidden="true">01</div><p>Valentina Salazar</p></div>
+          <div class="student"><div class="avatar" aria-hidden="true">02</div><p>Kiwi González</p></div>
+          <div class="student"><div class="avatar" aria-hidden="true">03</div><p>Pablo Flores</p></div>
         </div>
       </div>
     </section>
+
     <section id="laboratorio" class="gray">
       <div class="container photo-grid">
         <div>
@@ -65,24 +126,33 @@
           <h2>Investigación y colaboración</h2>
           <p class="lead">El laboratorio impulsa el trabajo académico, la formación de estudiantes y el desarrollo de proyectos de investigación en física computacional.</p>
           <a class="outline-link" href="https://www.upla.cl/" target="_blank" rel="noopener noreferrer">Conoce la Universidad de Playa Ancha ↗</a>
+          <a class="instagram-highlight" href="https://www.instagram.com/lcf_upla?psln=MXIzdzRicmZvcTJ4bA==" target="_blank" rel="noopener noreferrer">Instagram del laboratorio: @lcf_upla ↗</a>
         </div>
         <figure class="photo">
-          <!-- Fotografía institucional proporcionada por el usuario. -->
           <img src="https://www.upla.cl/investigacion/wp-content/uploads/2026/06/Leandro-Nulez-LFC-UPLA.jpeg" alt="Fotografía institucional vinculada al Laboratorio de Investigación en Cómputo de Física de la UPLA" loading="lazy">
           <figcaption>Fotografía: Universidad de Playa Ancha.</figcaption>
         </figure>
       </div>
     </section>
+
     <section class="contact" id="contacto">
       <div class="container">
         <p class="kicker" style="color:#9dc9ff">Conversemos</p>
         <h2>Contacto y colaboraciones</h2>
         <p>¿Te interesa conocer más sobre el laboratorio o explorar posibles colaboraciones? Estamos en la Universidad de Playa Ancha, Valparaíso, Chile.</p>
-        <a class="outline-link" href="https://www.upla.cl/" target="_blank" rel="noopener noreferrer">Sitio institucional UPLA ↗</a>
+        <div class="socials">
+          <a class="outline-link" href="https://www.upla.cl/" target="_blank" rel="noopener noreferrer">Sitio institucional UPLA ↗</a>
+          <a class="social-link" href="https://www.instagram.com/lcf_upla?psln=MXIzdzRicmZvcTJ4bA==" target="_blank" rel="noopener noreferrer">Instagram: @lcf_upla ↗</a>
+        </div>
       </div>
     </section>
   </main>
-  <footer><div class="container"><span>© <span id="year">2026</span> Laboratorio de Investigación en Cómputo de Física · UPLA</span><span>Valparaíso, Chile</span></div></footer>
+  <footer>
+    <div class="container">
+      <span>© <span id="year">2026</span> Laboratorio de Investigación en Cómputo de Física · UPLA</span>
+      <span>Valparaíso, Chile · <a href="https://www.instagram.com/lcf_upla?psln=MXIzdzRicmZvcTJ4bA==" target="_blank" rel="noopener noreferrer">@lcf_upla</a></span>
+    </div>
+  </footer>
   <script>document.getElementById('year').textContent=new Date().getFullYear();</script>
 </body>
 </html>
